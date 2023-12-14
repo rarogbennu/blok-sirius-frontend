@@ -1,2 +1,2 @@
-export const endpoint = "https://block-sirius-backend-new.azurewebsites.net/";
+export const endpoint = "https://blok-sirius-backend.azurewebsites.net/";
 // "http://localhost:3333";
