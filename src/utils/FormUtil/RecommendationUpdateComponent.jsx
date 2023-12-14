@@ -11,14 +11,14 @@ const UpdateRecommendationForm = ({ recommendationToUpdate, onSubmit }) => {
   const [form, setForm] = useState({
     title: '',
     content: '',
-    recommendation_url: '', // Added recommendation_url field
+    recommendation_url: '',
     category: '',
     tagged_user: '',
     updated_by_id: user?.user_id || '',
   });
 
   const [users, setUsers] = useState([]);
-  
+
 
   useEffect(() => {
     if (recommendationToUpdate) {
@@ -90,7 +90,7 @@ const UpdateRecommendationForm = ({ recommendationToUpdate, onSubmit }) => {
       console.error('Error submitting form:', error.message);
     }
   };
-  
+
   return (
     <FormContainer onSubmit={handleSubmit}>
       <FormTitle>Update Recommendation</FormTitle>
@@ -151,6 +151,7 @@ const UpdateRecommendationForm = ({ recommendationToUpdate, onSubmit }) => {
           options={users}
           isSearchable
           placeholder="Search for a user..."
+          isDisabled
         />
       </FormInputContainer>
       <SubmitButton type="submit">Update</SubmitButton>
