@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { auth } from '../firebase.js';
 import { signOut } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
-import { useUser } from '../Services/Auth/UserContext'; 
+import { useUser } from '../services/Auth/UserContext'; 
 
 const useSignOut = () => {
   const [error, setError] = useState(null);
