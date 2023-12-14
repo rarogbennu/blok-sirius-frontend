@@ -19,8 +19,6 @@ const AdminEventSection = () => {
     setDate(selectedDate);
   };
 
-  //lil comment
-
   return (
     <>
       <GlobalStyle backgroundColor="yellow" />
